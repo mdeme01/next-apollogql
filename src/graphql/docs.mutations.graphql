@@ -1,0 +1,9 @@
+mutation addUser($id: UUID!, $name: String!) {
+  insertIntoUserCollection(objects: [{ id: $id, name: $name }]) {
+    affectedCount
+    records {
+      id
+      name
+    }
+  }
+}

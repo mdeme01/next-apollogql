@@ -1,0 +1,9 @@
+query getUsers {
+  userCollection {
+    edges {
+      node {
+        name
+      }
+    }
+  }
+}
